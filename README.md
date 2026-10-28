@@ -4,7 +4,7 @@
 ## Autor
 
 * **Gabriel Hatano Rocha**
-* **Curso:** Tecnologia em Desenvolvimento de Software Multiplataforma (1º Semestre — 2026/2)
+* **Curso:** Tecnologia em Desenvolvimento de Software Multiplataforma (1º Semestre - 2026)
 * **Instituição:** FATEC São José dos Campos
 
 ---
