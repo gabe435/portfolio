@@ -42,4 +42,4 @@ O projeto foi construído utilizando tecnologias nativas da Web, priorizando des
 
 O portfólio está publicado e acessível publicamente através do GitHub Pages:
 
-* [Acessar Portfólio Acadêmico Online](https://gabe435.github.io/portfolio-dsm/)
+* [Acessar Portfólio Acadêmico Online](https://gabe435.github.io/portfolio/)
