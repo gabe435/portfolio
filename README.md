@@ -1,6 +1,5 @@
 # Portfólio Acadêmico Digital — DSM FATEC SJC
 
-Repositório oficial do portfólio acadêmico pessoal desenvolvido para a disciplina de Desenvolvimento de Software Multiplataforma (DSM) da FATEC São José dos Campos (Prof. Jessen Vidal). O projeto tem como objetivo centralizar a apresentação de competências técnicas, histórico acadêmico e os projetos integradores desenvolvidos ao longo do curso.
 
 ## Autor
 
@@ -16,7 +15,7 @@ O projeto foi construído utilizando tecnologias nativas da Web, priorizando des
 
 * `index.html`: Arquivo principal contendo a estruturação semântica de todas as seções obrigatórias (Apresentação, Projetos API, Projetos Acadêmicos e Profissionais, Informações Curriculares e Contato).
 * `style.css`: Folha de estilos personalizada utilizando CSS Grid e Flexbox para garantir a adaptação fluida em diferentes resoluções de tela (mobile e desktop).
-* `assets/`: Diretório reservado para recursos estáticos e mídias do portfólio.
+* `fotos/`: Diretório reservado para recursos estáticos e mídias do portfólio.
 
 ---
 
