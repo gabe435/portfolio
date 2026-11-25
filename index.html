@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Hatano Rocha | Portfólio Acadêmico</title>
+    <title>Gabriel Hatano Rocha | Portfólio Acadêmico DSM</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="header">
-        <div class="container navbar">
-            <a href="#apresentacao" class="logo">Gabriel Hatano</a>
+    <header>
+        <div>
+            <a href="#apresentacao">Gabriel Hatano</a>
             <nav aria-label="Menu principal">
-                <ul class="nav-links">
+                <ul>
                     <li><a href="#apresentacao">Apresentação</a></li>
                     <li><a href="#projetos-api">Projetos API</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="projetos.html">Galeria de Projetos</a></li>
+                    <li><a href="cursos.html">Cursos e Eventos</a></li>
                     <li><a href="#curriculo">Currículo</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
@@ -23,42 +23,42 @@
         </div>
     </header>
 
-    <main class="container main-layout">
-        <section id="apresentacao" class="card section-block">
-            <div class="profile-header">
-                <img src="https://github.com/gabe435.png" alt="Foto de Gabriel Hatano Rocha" class="profile-img">
-                <div class="profile-title">
-                    <span class="tag-course">Desenvolvimento de Software Multiplataforma</span>
+    <main>
+        <section id="apresentacao">
+            <div>
+                <img alt="Foto de Gabriel Hatano Rocha" src="https://github.com/gabe435.png">
+                <div>
+                    <span>Desenvolvimento de Software Multiplataforma</span>
                     <h1>Gabriel Hatano Rocha</h1>
-                    <p class="lead">
+                    <p>
                         Graduando na FATEC São José dos Campos - Prof. Jessen Vidal.
                     </p>
-                    <div class="action-links mt-sm">
-                        <a href="https://www.linkedin.com/in/gabrielhatano/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <div>
+                        <a href="https://www.linkedin.com/in/gabrielhatano/" rel="noopener noreferrer" target="_blank">
                             LinkedIn
                         </a>
-                        <a href="https://github.com/gabe435" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <a href="https://github.com/gabe435" rel="noopener noreferrer" target="_blank">
                             GitHub (@gabe435)
                         </a>
                     </div>
                 </div>
             </div>
 
-            <p class="bio-text">
-                Desenvolvedor em formação com foco em programação Python, ambientes Linux e aplicações web. Além da rotina acadêmica, atuo de forma autônoma na gestão de e-commerce em marketplaces como Mercado Livre aliando visão comercial e organização logística ao uso de tecnologia.
+            <p>
+                Desenvolvedor em formação com foco em programação Python, ambientes Linux e aplicações web. Além da rotina acadêmica, atuo de forma autônoma na gestão de e-commerce em marketplaces como Mercado Livre, aliando visão comercial e organização logística ao uso de tecnologia.
             </p>
 
-            <div class="info-grid">
-                <div class="info-box">
+            <div>
+                <div>
                     <h2>Objetivos Acadêmicos e Profissionais</h2>
-                    <p class="text-block">
+                    <p>
                         Durante a graduação em DSM, busco construir uma base sólida em arquitetura de software e desenvolvimento Full Stack. Procuro minha primeira oportunidade de estágio em tecnologia para colaborar em projetos de desenvolvimento e expandir minha experiência prática.
                     </p>
                 </div>
 
-                <div class="info-box">
+                <div>
                     <h2>Áreas de Interesse</h2>
-                    <ul class="pill-list">
+                    <ul>
                         <li>Desenvolvimento Web</li>
                         <li>Análise de Dados com Python</li>
                         <li>Sistemas Linux (Fedora)</li>
@@ -69,168 +69,173 @@
             </div>
         </section>
 
-        <section id="projetos-api" class="card section-block">
-            <div class="section-title-bar">
+        <section id="projetos-api">
+            <div>
                 <h2>Projetos API</h2>
                 <span>1º Semestre (2026/2)</span>
             </div>
 
-            <article class="api-project">
-                <div class="api-header">
+            <article>
+                <div>
                     <div>
                         <h3>Crédito Inclusivo</h3>
-                        <span class="api-subtitle">Equipe InovaCredito - Função: PO(Product Owner)</span>
+                        <span>Equipe InovaCrédito - Função: PO (Product Owner)</span>
                     </div>
-                    <div class="partner-info">
+                    <div>
                         <span>Cliente / Parceiro:</span>
                         <strong>Prof. Fernando Masanori Ashikaga (FATEC)</strong>
                     </div>
                 </div>
 
-                <div class="api-grid">
-                    <div class="api-item">
+                <div>
+                    <div>
                         <h4>Contexto e Problema</h4>
                         <p>
                             Os critérios tradicionais de avaliação de risco adotados pelo sistema financeiro frequentemente restringem o acesso ao crédito para camadas da população que possuem capacidade de adimplência. A ausência de um cruzamento claro entre indicadores demográficos e dados de endividamento dificulta a identificação de regiões com potencial para oferta de crédito sustentável.
                         </p>
                     </div>
 
-                    <div class="api-item">
+                    <div>
                         <h4>Solução Desenvolvida</h4>
                         <p>
                             Construção de uma aplicação web voltada à visualização de dados socioeconômicos. O sistema coleta e processa bases públicas do Sistema de Informações de Crédito (SCR/Banco Central) e do IBGE, apresentando gráficos analíticos sobre evolução populacional, distribuição de dívidas, taxas praticadas e índices de inadimplência nos estados brasileiros.
                         </p>
                     </div>
 
-                    <div class="api-item">
+                    <div>
                         <h4>Contribuições Pessoais</h4>
-                        <ul class="bullet-list">
+                        <ul>
                             <li>Escrita e refatoração de scripts em Python no Google Colab utilizando Pandas para tratamento, filtragem e cruzamento das bases do Banco Central e do IBGE.</li>
-                            <li>Geração e estilização de visualizações gráficas sobre indicadores financeiros e demográficos com a biblioteca Matplotlib.</li>
-                            <li>Planejamento de entregas de acordo com o cronograma e com todos os requerimentos exigidos pelo Cliente para a criação de um MVP</li>
-                            <li>Auxiliando o meu grupo da API como representante do produto e líder</li>
+                            <li>Criação de gráficos complexos a partir de endpoints do IBGE e do Banco Central (BCB) utilizando Matplotlib e Seaborn no Google Colab, integrando-os a uma aplicação web em Flask com HTML5 e CSS3.</li>
+                            <li>Planejamento de entregas de acordo com o cronograma e com os requisitos definidos pelo cliente para a construção de um MVP funcional.</li>
+                            <li>Atuação como PO (Product Owner) e líder de produto da equipe InovaCrédito, alinhando prioridades e apoiando a organização do grupo.</li>
                         </ul>
                     </div>
 
-                    <div class="api-item">
+                    <div>
                         <h4>Competências Aplicadas</h4>
-                        <p><strong>Hard Skills:</strong> Python, Pandas, Matplotlib, Google Colab, Flask, HTML5, CSS3, Git e GitHub.</p>
-                        <p class="mt-sm"><strong>Soft Skills:</strong> Colaboração em equipe ágil (Scrum), organização de tarefas por entregas, comunicação e pensamento analítico.</p>
-                        <p>Fiz diversos gráficos complexos com endpoints do IBGE e BCB, a partir destes endpoints criei graficos completos utilizando a biblioteca Matplotlib e Seaborn no Google Colab.
-                        Utilizei esses codigos com o flask para subir cada um deles em um site, utilizando HTML5 e CSS3.</p>
+                        <p><strong>Hard Skills:</strong> Uso de Python, Pandas, Matplotlib e Seaborn no Google Colab para tratamento de dados e geração de gráficos a partir de endpoints públicos, integração visual com Flask, HTML5 e CSS3, e versionamento com Git e GitHub.</p>
+                        <p><strong>Soft Skills:</strong> Liderança como Product Owner, colaboração em equipe ágil (Scrum), organização de tarefas por entregas, comunicação com o cliente e pensamento analítico.</p>
                     </div>
                 </div>
 
-                <div class="api-footer">
-                    <ul class="pill-list">
+                <div>
+                    <ul>
                         <li>Python</li>
                         <li>Pandas</li>
                         <li>Matplotlib</li>
+                        <li>Seaborn</li>
                         <li>Google Colab</li>
                         <li>Flask</li>
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>Git</li>
                         <li>Scrum</li>
-
                     </ul>
 
-                    <div class="action-links">
-                        <a href="https://github.com/gabe435/InovaCredito" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <div>
+                        <a href="https://github.com/gabe435/InovaCredito" rel="noopener noreferrer" target="_blank">
                             Repositório do Projeto
+                        </a>
+                        <a href="projetos.html#galeria-credito-inclusivo">
+                            Ver Imagens do Projeto
                         </a>
                     </div>
                 </div>
             </article>
         </section>
 
-        <section id="projetos" class="card section-block">
-            <div class="section-title-bar">
+        <section id="projetos">
+            <div>
                 <h2>Projetos Pessoais e Atividades Profissionais</h2>
                 <span>Experiência Prática</span>
             </div>
 
-            <div class="projects-grid">
-                <article class="project-box">
+            <div>
+                <article>
                     <div>
-                        <div class="project-top">
+                        <div>
                             <h3>E-Commerce</h3>
-                            <span class="tag-small">Atividade Profissional</span>
+                            <span>Atividade Profissional</span>
                         </div>
                         <p>
-                            Operação e gerenciamento de vendas online em múltiplos marketplaces, incluindo Mercado Livre, LigaPokémon e LigaSegura. Atuação no controle de estoque,atendimento aos compradores e gestão logística de envios.
+                            Operação e gerenciamento de vendas online em múltiplos marketplaces, incluindo Mercado Livre, LigaPokémon e LigaSegura. Atuação no controle de estoque, atendimento aos compradores e gestão logística de envios, organizando rotinas operacionais com foco em prazos e consistência de catálogo.
                         </p>
-                        <ul class="pill-list">
+                        <ul>
                             <li>Mercado Livre</li>
                             <li>LigaPokémon</li>
                             <li>Gestão de Estoque</li>
                             <li>Logística de Envios</li>
                         </ul>
                     </div>
-                    <div class="project-actions">
-                        <span class="muted-note">Gestão autônoma de e-commerce e marketplaces</span>
+                    <div>
+                        <span>Gestão autônoma de e-commerce e marketplaces</span>
                     </div>
                 </article>
 
-                <article class="project-box">
+                <article>
                     <div>
-                        <div class="project-top">
+                        <div>
                             <h3>Pace Run Academy</h3>
-                            <span class="tag-small">Front-End</span>
+                            <span>Front-End</span>
                         </div>
                         <p>
-                            Desenvolvimento de um site responsivo dividido em três páginas para uma assessoria de corrida. O projeto tem estruturação semântica em HTML5 e estilização com CSS3 e Bootstrap 5, garantindo uma boa leitura  em celulares e em monitores.
+                            Desenvolvimento de um site responsivo dividido em três páginas para uma assessoria de corrida. O projeto tem estruturação semântica em HTML5 e estilização com CSS3 e Bootstrap 5, garantindo uma boa leitura em celulares e em monitores, com publicação via GitHub Pages.
                         </p>
-                        <ul class="pill-list">
+                        <ul>
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>Bootstrap 5</li>
                             <li>GitHub Pages</li>
                         </ul>
                     </div>
-                    <div class="project-actions">
-                        <a href="https://gabe435.github.io/Pace-Run-Academy/" target="_blank" rel="noopener noreferrer" class="link-btn">Acessar página</a>
-                        <a href="https://github.com/gabe435/Pace-Run-Academy" target="_blank" rel="noopener noreferrer" class="link-btn">Ver código</a>
+                    <div>
+                        <a href="https://gabe435.github.io/Pace-Run-Academy/" rel="noopener noreferrer" target="_blank">Acessar página</a>
+                        <a href="https://github.com/gabe435/Pace-Run-Academy" rel="noopener noreferrer" target="_blank">Ver código</a>
+                        <a href="projetos.html#galeria-pace-run">Ver imagens</a>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section id="curriculo" class="card section-block">
-            <div class="section-title-bar">
+        <section id="curriculo">
+            <div>
                 <h2>Informações Curriculares</h2>
                 <span>Formação e Qualificações</span>
             </div>
 
-            <div class="curriculum-grid">
-                <div class="curr-block">
+            <div>
+                <div>
                     <h3>Formação Acadêmica</h3>
-                    <ul class="timeline-list">
+                    <ul>
                         <li>
-                            <span class="time-label">Ago 2026 - Atual</span>
+                            <span>Ago 2026 - Atual</span>
                             <strong>Tecnólogo em Desenvolvimento de Software Multiplataforma</strong>
                             <span>FATEC São José dos Campos</span>
                         </li>
                         <li>
-                            <span class="time-label">Concluído em 2025</span>
+                            <span>Concluído em 2025</span>
                             <strong>Ensino Médio</strong>
                             <span>Escola Cristã Batista Regular (São José dos Campos - SP)</span>
                         </li>
                     </ul>
 
-                    <h3 class="mt-md">Experiência Profissional</h3>
-                    <ul class="timeline-list">
+                    <h3>Experiência Profissional</h3>
+                    <ul>
                         <li>
-                            <span class="time-label">2025 - Atual</span>
+                            <span>2025 - Atual</span>
                             <strong>Gestor de E-Commerce e Marketplaces</strong>
                             <span>Operação de loja virtual em marketplaces, controle de inventário e expedição de pedidos.</span>
                         </li>
                     </ul>
+
+                    <h3>Cursos e Eventos</h3>
+                    <p>Confira a relação completa de certificações, cursos complementares e eventos acadêmicos em <a href="cursos.html">Cursos e Eventos</a>.</p>
                 </div>
 
-                <div class="curr-block">
+                <div>
                     <h3>Conhecimentos Técnicos</h3>
-                    <ul class="pill-list">
+                    <ul>
                         <li>Python</li>
                         <li>Pandas</li>
                         <li>Matplotlib</li>
@@ -243,14 +248,14 @@
                         <li>Git e GitHub</li>
                     </ul>
 
-                    <h3 class="mt-md">Idiomas</h3>
-                    <ul class="pill-list">
+                    <h3>Idiomas</h3>
+                    <ul>
                         <li>Inglês: Avançado</li>
                         <li>Francês: Básico</li>
                     </ul>
 
-                    <h3 class="mt-md">Habilidades Interpessoais</h3>
-                    <ul class="pill-list">
+                    <h3>Habilidades Interpessoais</h3>
+                    <ul>
                         <li>Trabalho em equipe</li>
                         <li>Resolução de problemas</li>
                         <li>Comunicação objetiva</li>
@@ -261,22 +266,22 @@
             </div>
         </section>
 
-        <section id="contato" class="card section-block">
-            <div class="section-title-bar">
+        <section id="contato">
+            <div>
                 <h2>Contato</h2>
                 <span>Canais de Comunicação</span>
             </div>
 
-            <div class="contact-flex">
-                <a href="https://www.linkedin.com/in/gabrielhatano/" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <div>
+                <a href="https://www.linkedin.com/in/gabrielhatano/" rel="noopener noreferrer" target="_blank">
                     <span>LinkedIn</span>
                     <strong>linkedin.com/in/gabrielhatano</strong>
                 </a>
-                <a href="https://github.com/gabe435" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <a href="https://github.com/gabe435" rel="noopener noreferrer" target="_blank">
                     <span>GitHub</span>
                     <strong>github.com/gabe435</strong>
                 </a>
-                <a href="mailto:gabrielhatanorocha@email.com" class="contact-item">
+                <a href="mailto:gabrielhatanorocha@gmail.com">
                     <span>E-mail</span>
                     <strong>gabrielhatanorocha@gmail.com</strong>
                 </a>
@@ -284,11 +289,10 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container footer-content">
+    <footer>
+        <div>
             <p>Gabriel Hatano Rocha - Portfólio Acadêmico DSM (FATEC SJC)</p>
         </div>
     </footer>
-
 </body>
 </html>
