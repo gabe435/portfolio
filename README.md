@@ -23,7 +23,7 @@ O projeto foi construído utilizando tecnologias nativas da Web, priorizando des
 
 1. **Apresentação Pessoal:** Resumo profissional, objetivos acadêmicos, áreas de interesse e links diretos para perfis de contato.
 2. **Projetos API (Aprendizagem por Projetos Integrados):** Exposição detalhada do projeto desenvolvido semestralmente em equipe com parceiros do mercado.
-   * **Projeto Atual (1º Semestre):** *Crédito Inclusivo* (Equipe Kurumin), voltado ao processamento e visualização de dados públicos de crédito e inadimplência do Banco Central e IBGE.
+   * **Projeto Atual (1º Semestre):** *Crédito Inclusivo* (Equipe InovaCredito), voltado ao processamento e visualização de dados públicos de crédito e inadimplência do Banco Central e IBGE.
 3. **Projetos Profissionais e Pessoais:** Exibição de trabalhos práticos como a aplicação web *Pace Run Academy*, rotinas de automação em Bash/Linux e a experiência em operações de e-commerce e marketplaces (*GHR Commerce*).
 4. **Informações Curriculares:** Histórico de formação acadêmica, stack tecnológica organizada (hard skills), competências interpessoais (soft skills) e cursos complementares.
 5. **Contato:** Canais de comunicação direta e links para repositórios no GitHub e perfil no LinkedIn.
