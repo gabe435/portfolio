@@ -1,12 +1,13 @@
+/* Reset e variáveis visuais */
 :root {
-    --bg-page: #0f172a;
-    --bg-surface: #1e293b;
-    --bg-surface-alt: #162032;
+    --bg-page: #0b1120;
+    --bg-surface: #111827;
+    --bg-surface-soft: #1e293b;
     --text-main: #f8fafc;
     --text-muted: #cbd5e1;
     --accent: #38bdf8;
-    --accent-hover: #0284c7;
-    --border-color: #334155;
+    --accent-hover: #0ea5e9;
+    --border-color: #263349;
     --radius: 12px;
     --max-width: 1120px;
 }
@@ -33,7 +34,6 @@ body {
 a {
     color: var(--accent);
     text-decoration: none;
-    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
 }
 
 a:hover {
@@ -55,7 +55,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: rgba(15, 23, 42, 0.92);
+    background-color: rgba(11, 17, 32, 0.94);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border-color);
 }
@@ -87,7 +87,7 @@ header nav a {
     color: var(--text-muted);
     font-size: 0.95rem;
     font-weight: 500;
-    padding: 0.25rem 0;
+    padding-bottom: 0.2rem;
 }
 
 header nav a:hover,
@@ -96,7 +96,7 @@ header nav a[aria-current="page"] {
     border-bottom: 2px solid var(--accent);
 }
 
-/* Container principal e seções */
+/* Estrutura principal */
 main {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -106,20 +106,23 @@ main {
     gap: 3.5rem;
 }
 
+section {
+    scroll-margin-top: 5rem;
+}
+
 section > div:first-child {
     margin-bottom: 1.5rem;
 }
 
 h1 {
-    font-size: clamp(1.75rem, 3vw, 2.4rem);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
     line-height: 1.2;
-    margin-bottom: 0.4rem;
+    margin: 0.25rem 0 0.5rem;
 }
 
 h2 {
     font-size: clamp(1.35rem, 2.2vw, 1.75rem);
     line-height: 1.25;
-    margin-bottom: 0.5rem;
 }
 
 h3 {
@@ -144,7 +147,82 @@ section > div:first-child > span {
     color: var(--accent);
 }
 
-/* Cards e blocos */
+/* Apresentação */
+#apresentacao img {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+}
+
+#apresentacao > div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+}
+
+#apresentacao > div:first-child > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.9rem;
+}
+
+#apresentacao > div:first-child > div > div a {
+    display: inline-block;
+    background-color: var(--bg-surface-soft);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    padding: 0.45rem 0.9rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#apresentacao > div:first-child > div > div a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+#apresentacao > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+}
+
+#apresentacao > div:last-child > div {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+}
+
+#apresentacao ul,
+#curriculo ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+#apresentacao ul li,
+#curriculo ul li {
+    background-color: var(--bg-surface-soft);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-main);
+}
+
+/* Cards de projetos */
 article {
     background-color: var(--bg-surface);
     border: 1px solid var(--border-color);
@@ -155,29 +233,106 @@ article {
     gap: 1.25rem;
 }
 
-section > div:nth-of-type(2) {
+#projetos > div:nth-of-type(2),
+#cursos-eventos > div:not(:first-child) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 1.5rem;
 }
 
+#projetos-api article > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+}
+
+#projetos-api article > div:nth-child(2) ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1.1rem;
+    list-style: disc;
+    color: var(--text-muted);
+}
+
 /* Tags de tecnologia */
-article ul {
+article > div:last-child ul {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-article ul li {
-    background-color: var(--bg-surface-alt);
+article > div:last-child ul li {
+    background-color: var(--bg-surface-soft);
     border: 1px solid var(--border-color);
     color: var(--text-main);
     font-size: 0.85rem;
-    padding: 0.3rem 0.75rem;
+    padding: 0.25rem 0.7rem;
     border-radius: 999px;
 }
 
-/* Galeria de imagens (projetos.html) */
+/* Botões de ação */
+article > div:last-child > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+article > div:last-child > div a {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--bg-page);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.55rem 1rem;
+    border-radius: 8px;
+}
+
+article > div:last-child > div a:hover {
+    background-color: var(--accent-hover);
+    color: var(--text-main);
+}
+
+/* Currículo e Contato */
+#curriculo > div:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+#curriculo > div:nth-of-type(2) > div > h3:not(:first-child) {
+    margin-top: 1.5rem;
+}
+
+#curriculo ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    width: 100%;
+}
+
+#contato > div:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+#contato > div:nth-of-type(2) a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1.1rem 1.25rem;
+}
+
+#contato > div:nth-of-type(2) a:hover {
+    border-color: var(--accent);
+}
+
+/* Galeria em projetos.html */
 #galeria-projetos > article > div:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -185,7 +340,7 @@ article ul li {
 }
 
 figure {
-    background-color: var(--bg-surface-alt);
+    background-color: var(--bg-surface-soft);
     border: 1px solid var(--border-color);
     border-radius: 10px;
     overflow: hidden;
@@ -205,33 +360,10 @@ figcaption {
     color: var(--text-muted);
 }
 
-/* Botões / links de ação */
-article > div:last-child {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-top: auto;
-}
-
-article > div:last-child a {
-    display: inline-block;
-    background-color: var(--accent);
-    color: var(--bg-page);
-    font-weight: 600;
-    font-size: 0.9rem;
-    padding: 0.55rem 1rem;
-    border-radius: 8px;
-}
-
-article > div:last-child a:hover {
-    background-color: var(--accent-hover);
-    color: var(--text-main);
-}
-
 /* Rodapé */
 footer {
     border-top: 1px solid var(--border-color);
-    background-color: var(--bg-surface-alt);
+    background-color: var(--bg-surface);
     padding: 1.5rem;
     text-align: center;
 }
@@ -245,7 +377,7 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* Responsividade em telas pequenas */
+/* Responsividade */
 @media (max-width: 640px) {
     header > div {
         flex-direction: column;
@@ -257,7 +389,9 @@ footer p {
         gap: 2.5rem;
     }
 
-    article {
+    article,
+    #apresentacao > div:first-child,
+    #apresentacao > div:last-child > div {
         padding: 1.25rem;
     }
 }
